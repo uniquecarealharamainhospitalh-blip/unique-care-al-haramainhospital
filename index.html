@@ -8,52 +8,93 @@
 <style>
 body {
   margin:0;
-  font-family: Arial, sans-serif;
-  line-height:1.6;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#222;
 }
 
-/* HEADER */
-<header>
-  <div class="logo">
-    <img src="LOGO.png" alt="Unique Care Al Haramain Hospital Logo">
-  </div>
+/* ===== HEADER ===== */
+.main-header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#telemedicine">Telemedicine</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* HERO */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  height: 55px;
+}
+
+.brand-text h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #006b3c;
+}
+
+.brand-text span {
+  font-size: 14px;
+  color: #c40000;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #c40000;
+}
+
+/* ===== HERO ===== */
 .hero {
-  background:url('consultation.png') center/cover no-repeat;
-  color:#fff;
-  text-align:center;
+  background: url('consultation.png') center/cover no-repeat;
   padding:120px 20px;
+  text-align:center;
+  color:#fff;
 }
 
 .hero-overlay {
-  background:rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.6);
   padding:40px;
   border-radius:10px;
 }
 
-.btn {
-  display:inline-block;
-  margin:10px;
-  padding:10px 20px;
-  background:#c40000;
-  color:#fff;
-  text-decoration:none;
-  border-radius:5px;
+.hero h1 {
+  font-size:36px;
 }
 
-/* SECTION */
+.hero button {
+  margin:10px;
+  padding:12px 20px;
+  border:none;
+  background:#c40000;
+  color:#fff;
+  font-size:16px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* ===== SECTIONS ===== */
 .section {
-  padding:40px 20px;
+  padding:60px 20px;
   max-width:1000px;
   margin:auto;
 }
@@ -68,150 +109,149 @@ body {
   margin-top:20px;
 }
 
-/* SERVICES */
+/* ===== SERVICES ===== */
 .services ul {
   columns:2;
 }
 
-/* TESTIMONIAL */
-.testimonial {
-  background:#f9f9f9;
-  padding:15px;
-  margin:10px 0;
-  border-left:4px solid #c40000;
-}
-
-/* CONTACT */
+/* ===== CONTACT ===== */
 .contact-box {
   background:#f4f4f4;
   padding:20px;
   border-radius:10px;
 }
 
-/* WHATSAPP FLOAT */
+/* ===== WHATSAPP BUTTON ===== */
 .whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:15px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
   background:#006b3c;
   color:#fff;
   text-align:center;
   padding:20px;
 }
-
-/* MOBILE */
-@media(max-width:768px){
-  .services ul {
-    columns:1;
-  }
-
-  .hero {
-    padding:80px 20px;
-  }
-}
 </style>
 </head>
 
 <body>
 
-<header>
-  <img src="LOGO.png">
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+  <div class="header-container">
+
+    <div class="brand">
+      <img src="LOGO.png">
+      <div class="brand-text">
+        <h2>Unique Care Al Haramain</h2>
+        <span>Hospital</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#telemedicine">Telemedicine</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
 </header>
 
-<!-- HERO -->
+<!-- ===== HERO ===== -->
 <section class="hero" id="home">
   <div class="hero-overlay">
     <h1>Unique Care Al Haramain Hospital</h1>
     <p>Quality Healthcare with a Human Touch</p>
-    <a href="tel:09048931981" class="btn">Call Now</a>
-    <a href="https://wa.me/2349048931981" class="btn">WhatsApp</a>
+    <button onclick="window.location.href='tel:09048931981'">Call Now</button>
+    <button onclick="window.location.href='https://wa.me/2349048931981'">WhatsApp</button>
   </div>
 </section>
 
-<!-- WELCOME -->
-<section class="section">
-  <h2>Welcome</h2>
-  <p>We are a leading private healthcare provider in Kano delivering quality, safe and patient-centred care.</p>
-  <img src="exterior.png" class="image-full">
-</section>
-
-<!-- ABOUT -->
+<!-- ===== ABOUT ===== -->
 <section class="section" id="about">
-  <h2>About Us</h2>
-  <p>We provide quality healthcare services with experienced specialists.</p>
+  <h2>Who We Are</h2>
+  <p>
+    Unique Care Al Haramain Hospital is a leading private healthcare facility in Kano State,
+    delivering safe, high-quality and patient-centred medical care.
+  </p>
+
   <img src="interior.png" class="image-full">
 
-  <h3>Vision</h3>
-  <p>To be the best specialised private hospital.</p>
-
   <h3>Mission</h3>
-  <p>To deliver safe, quality healthcare with excellent experience.</p>
+  <p>To serve the world with the highest level of safe, quality healthcare.</p>
+
+  <h3>Vision</h3>
+  <p>To be the best specialised private hospital of choice.</p>
 </section>
 
-<!-- SERVICES -->
+<!-- ===== SERVICES ===== -->
 <section class="section services" id="services">
   <h2>Our Services</h2>
   <ul>
     <li>Internal Medicine</li>
     <li>Paediatrics</li>
+    <li>Obstetrics & Gynaecology</li>
     <li>General Surgery</li>
-    <li>ENT</li>
+    <li>ENT Surgery</li>
+    <li>Dental Surgery</li>
+    <li>Ophthalmology</li>
     <li>Cardiology</li>
     <li>Urology</li>
+    <li>Psychiatry</li>
     <li>Radiology</li>
     <li>Laboratory</li>
   </ul>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="section">
-  <h2>Success Stories</h2>
-  <div class="testimonial">“Excellent care and treatment.”</div>
-  <div class="testimonial">“Professional and compassionate staff.”</div>
+<!-- ===== TELEMEDICINE ===== -->
+<section class="section" id="telemedicine">
+  <h2>Telemedicine</h2>
+  <p>
+    We provide remote consultation, diagnosis, and follow-up using modern
+    telecommunication technologies.
+  </p>
+
+  <img src="consultation.png" class="image-full">
 </section>
 
-<!-- CONTACT -->
+<!-- ===== CONTACT ===== -->
 <section class="section" id="contact">
   <h2>Contact Us</h2>
+
   <div class="contact-box">
     <p><strong>Phone:</strong> 09048931981</p>
     <p><strong>Email:</strong> uniquecarealharamainhospitalh@gmail.com</p>
+    <p><strong>Location:</strong> Kano, Nigeria</p>
   </div>
 
   <img src="exterior.png" class="image-full">
 
- <h3>Find Us on Map</h3>
+  <h3>Find Us on Map</h3>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.6610841588185!2d8.62303827410374!3d11.928657936887026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae833d57cb1269%3A0x8e9db8b8c5b9e88!2sUnique%20Care%20Al-Haramain%20Hospital!5e0!3m2!1sen!2sng!4v1774302691800!5m2!1sen!2sng"
+    width="100%" height="350" style="border:0;border-radius:10px;margin-top:20px;"
+    loading="lazy">
+  </iframe>
+</section>
 
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.6610841588185!2d8.62303827410374!3d11.928657936887026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae833d57cb1269%3A0x8e9db8b8c5b9e88!2sUnique%20Care%20Al-Haramain%20Hospital!5e0!3m2!1sen!2sng!4v1774302691800!5m2!1sen!2sng"
-  width="100%" 
-  height="350" 
-  style="border:0; border-radius:10px; margin-top:20px;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
-  
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/2349048931981" class="whatsapp">💬</a>
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/2349048931981" class="whatsapp">Chat with Us</a>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-  <p>&copy; 2026 Unique Care Al Haramain Hospital</p>
+  <p>© 2026 Unique Care Al Haramain Hospital</p>
 </footer>
 
 </body>
