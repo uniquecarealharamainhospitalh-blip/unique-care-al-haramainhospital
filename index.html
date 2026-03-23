@@ -1,148 +1,243 @@
-# Unique Care Al Haramain Hospital
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unique Care Al Haramain Hospital</title>
 
-**Quality Healthcare with a Human Touch**
-*Kano City, Kano State*
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#222;
+    }
 
-📞 **09048931981**
-📧 **[uniquecarealharamainhospitalh@gmail.com](mailto:uniquecarealharamainhospitalh@gmail.com)**
-💬 **WhatsApp: Chat with Us**
+    header {
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 20px;
+      box-shadow:0 2px 5px rgba(0,0,0,.1);
+    }
 
-# 🌐 HOME PAGE
+    header img {
+      height:60px;
+    }
 
-## 🔵 HERO SECTION (Full Width Banner Image)
+    nav a {
+      margin-left:15px;
+      text-decoration:none;
+      color:#006b3c;
+      font-weight:bold;
+    }
 
-**Image:** Hospital reception / consultation image (your uploaded image of doctor attending to patient at desk)
+    /* HERO */
+    .hero {
+      background-image: url('consultation.png');
+      background-size: cover;
+      background-position: center;
+      color:#fff;
+      text-align:center;
+      padding:120px 20px;
+    }
 
-Overlay Text:
+    .hero-overlay {
+      background: rgba(0,0,0,0.6);
+      padding:40px;
+      border-radius:10px;
+    }
 
-> Unique Care Al Haramain Hospital
-> Quality Healthcare with a Human Touch
+    .hero h1 {
+      font-size:36px;
+      margin-bottom:10px;
+    }
 
-Buttons:
+    .btn {
+      display:inline-block;
+      margin:10px;
+      padding:10px 20px;
+      background:#c40000;
+      color:#fff;
+      text-decoration:none;
+      border-radius:5px;
+    }
 
-* Call Now
-* Chat on WhatsApp
+    .section {
+      padding:50px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
 
+    .section h2 {
+      color:#c40000;
+    }
 
-## Welcome Section (With Side Image)
+    .image-full {
+      width:100%;
+      border-radius:10px;
+      margin-top:20px;
+    }
 
-**Image (Right Side):** Exterior hospital building image (your uploaded Al Haramain Hospital building photo)
+    .services ul {
+      columns:2;
+    }
 
-Text (Left Side):
-Welcome to **Unique Care Al Haramain Hospital**, a leading private healthcare facility in Kano State, Nigeria. We are committed to delivering safe, high-quality, and patient-centred medical care using modern medical practices and compassionate service.
+    .testimonial {
+      background:#f9f9f9;
+      padding:15px;
+      border-left:4px solid #c40000;
+      margin-bottom:15px;
+    }
 
-Our hospital combines skilled professionals, modern facilities, and ethical medical practice to ensure every patient receives the best possible care.
+    .contact-box {
+      background:#f4f4f4;
+      padding:20px;
+      border-radius:10px;
+    }
 
+    footer {
+      background:#006b3c;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
 
+  </style>
+</head>
 
-# 🏥 ABOUT US PAGE
+<body>
 
-## Who We Are (With Interior Image)
+<!-- HEADER -->
+<header>
+  <img src="LOGO.png" alt="Hospital Logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#telemedicine">Telemedicine</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-**Image:** Hospital corridor / interior image (from your uploads)
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay">
+    <h1>Unique Care Al Haramain Hospital</h1>
+    <p>Quality Healthcare with a Human Touch</p>
+    <a href="tel:09048931981" class="btn">Call Now</a>
+    <a href="https://wa.me/2349048931981" class="btn">WhatsApp</a>
+  </div>
+</section>
 
-Unique Care Al Haramain Hospital is a profit-driven private hospital with a strong human touch. We provide quality primary healthcare and specialised medical services through a team of experienced and dedicated specialists across various fields of medicine.
+<!-- WELCOME / EXTERIOR -->
+<section class="section">
+  <h2>Welcome</h2>
+  <p>
+    Welcome to Unique Care Al Haramain Hospital, a leading private healthcare facility in Kano State.
+    We provide safe, high-quality, patient-centred care using modern medical practices.
+  </p>
+  <img src="exterior.png" class="image-full">
+</section>
 
-Although domiciled in Kano State, Nigeria, our hospital has a growing global reach through telemedicine and electronic health solutions.
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>
+    We are a specialised private hospital delivering quality healthcare services with compassion
+    and professionalism.
+  </p>
 
+  <img src="interior.png" class="image-full">
 
-## Mission, Vision & Values (Icon-Based Section)
+  <h3>Vision</h3>
+  <p>To be the best specialised private hospital of choice.</p>
 
-### Our Mission
+  <h3>Mission</h3>
+  <p>To deliver safe, high-quality healthcare with excellent patient experience.</p>
 
-To serve the world with the highest level of safe, quality healthcare and the best possible patient experience.
+  <h3>Core Values</h3>
+  <ul>
+    <li>Quality</li>
+    <li>Safety</li>
+    <li>Patient-centred care</li>
+    <li>Accountability</li>
+    <li>Excellence</li>
+  </ul>
+</section>
 
-### Our Vision
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Internal Medicine</li>
+    <li>Paediatrics</li>
+    <li>Obstetrics & Gynaecology</li>
+    <li>General Surgery</li>
+    <li>ENT Surgery</li>
+    <li>Ophthalmology</li>
+    <li>Cardiology</li>
+    <li>Urology</li>
+    <li>Psychiatry</li>
+    <li>Radiology</li>
+    <li>Laboratory Services</li>
+    <li>Family Medicine</li>
+  </ul>
+</section>
 
-To be the best specialised private hospital of choice for every patient.
+<!-- TELEMEDICINE -->
+<section class="section" id="telemedicine">
+  <h2>Telemedicine</h2>
+  <p>
+    We provide remote consultation and follow-up services using modern telecommunication technologies,
+    allowing patients to access care from anywhere.
+  </p>
 
-### Our Core Values
+  <img src="consultation.png" class="image-full">
+</section>
 
-* Quality
-* Safety
-* Patient-centred care
-* Accountability
-* Excellence
+<!-- TESTIMONIALS -->
+<section class="section">
+  <h2>Success Stories</h2>
 
+  <div class="testimonial">
+    “Excellent care and successful treatment for my daughter.”
+    <br><strong>– Kano</strong>
+  </div>
 
+  <div class="testimonial">
+    “Professional and compassionate medical support.”
+    <br><strong>– Hong Kong</strong>
+  </div>
 
-# 🩺 OUR SERVICES / SPECIALTIES
+</section>
 
-## Services Section (Grid Layout with Clean Medical Background Image)
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
 
-**Background Image:** Lightly faded hospital equipment or facility image (from your uploads)
+  <div class="contact-box">
+    <p><strong>Phone:</strong> 09048931981</p>
+    <p><strong>Email:</strong> uniquecarealharamainhospitalh@gmail.com</p>
+    <p><strong>Location:</strong> Kano City, Kano State</p>
+  </div>
 
-We offer comprehensive medical and surgical services including:
+  <!-- Building image -->
+  <img src="exterior.png" class="image-full">
 
-* Internal Medicine
-* Paediatrics
-* Obstetrics & Gynaecology
-* General Surgery
-* Ear, Nose & Throat (ENT) Surgery
-* Dental & Maxillofacial Surgery
-* Ophthalmology
-* Orthopaedics
-* Cardiology
-* Urology
-* Psychiatry
-* Radiology
-* Laboratory Services
-* Community Medicine
-* Family Medicine
+  <!-- Google Map -->
+  <iframe 
+    src="https://maps.google.com/maps?q=Kano&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300" style="border:0; margin-top:20px;">
+  </iframe>
 
+</section>
 
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Unique Care Al Haramain Hospital</p>
+</footer>
 
-# 🌍 TELEMEDICINE SECTION
-
-## Telemedicine Banner Image
-
-**Image:** Doctor consulting patient across desk (your uploaded consultation image)
-
-Unique Care Al Haramain Hospital leverages electronic media and telecommunication technologies to provide **remote clinical services** such as consultation, diagnosis, follow-up, and monitoring.
-
-Our telemedicine services help remove barriers to timely and efficient healthcare delivery, allowing patients to access qualified medical doctors regardless of location.
-
-
-# ⭐ SUCCESS STORIES
-
-## Testimonial Cards (Clean White Cards Over Soft Background Image)
-
-**Background Image:** Subtle hospital interior image
-
-**AbdulAzeez Muideen – Kano**
-“My daughter had ear infections in both ears. After several failed treatments elsewhere, we found help at Unique Care Al Haramain Hospital. The care was excellent and effective.”
-
-**Maria Veronica – Hong Kong**
-“I searched online for a solution to my medical condition and found help through Unique Care Al Haramain Hospital Foundation. The support was professional and compassionate.”
-
-**M. Ed Mercy – Ghana**
-“Thank you very much for being there for me. The medical advice and follow-up care made a big difference.”
-
-
-# 📞 CONTACT US PAGE
-
-## Contact Section (With Building Image Above Map)
-
-**Image:** Front view of Unique Care Al Haramain Hospital building
-
-📍 **Location:** Kano City, Kano State, Nigeria
-📞 **Phone:** 09048931981
-📧 **Email:** [uniquecarealharamainhospitalh@gmail.com](mailto:uniquecarealharamainhospitalh@gmail.com)
-
-Google Map Embed (Kano Location)
-
-WhatsApp Floating Button (Visible on all pages)
-
-# 🔒 WEBSITE FEATURES INCLUDED
-
-* Your uploaded hospital images integrated professionally
-* Mobile responsive design
-* Fast loading optimized images
-* WhatsApp floating chat button
-* Click-to-call phone number
-* Secure HTTPS (Free Hosting)
-* Clean modern medical design
-
-
-© Unique Care Al Haramain Hospital. All rights reserved.
-
+</body>
+</html>
